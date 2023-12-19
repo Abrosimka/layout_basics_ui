@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Велике фото -->
+    <ImageView
+        android:id="@+id/ivLargePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/large_photo"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true" />
+
+    <!-- Маленькі фото -->
+    <LinearLayout
+        android:id="@+id/llSmallPhotos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/ivLargePhoto"
+        android:padding="8dp">
+
+        <!-- Перше маленьке фото -->
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="80dp"
+            android:src="@drawable/small_photo1"
+            android:scaleType="centerCrop" />
+
+        <!-- Друге маленьке фото -->
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="80dp"
+            android:src="@drawable/small_photo2"
+            android:scaleType="centerCrop" />
+
+        <!-- Третє маленьке фото -->
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="80dp"
+            android:src="@drawable/small_photo3"
+            android:scaleType="centerCrop" />
+
+        <!-- Четверте маленьке фото -->
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="80dp"
+            android:src="@drawable/small_photo4"
+            android:scaleType="centerCrop" />
+
+        <!-- П'яте маленьке фото -->
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="80dp"
+            android:src="@drawable/small_photo5"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+
+    <!-- Ім'я та Нік -->
+
+
+</RelativeLayout>
