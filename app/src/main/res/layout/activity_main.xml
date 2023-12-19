@@ -63,6 +63,78 @@
     </LinearLayout>
 
     <!-- Ім'я та Нік -->
+    <TextView
+        android:id="@+id/tvNameAndNick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Бред Пітт sweetBrad"
+        android:textSize="18sp"
+        android:layout_below="@id/llSmallPhotos"
+        android:layout_margin="8dp" />
+
+    <!-- Країна та Місто проживання -->
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Шони, Оклахома, США"
+        android:layout_below="@id/tvNameAndNick"
+        android:layout_margin="8dp" />
+
+    <!-- Інтереси з іконками -->
+    <LinearLayout
+        android:id="@+id/llInterests"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/tvLocation"
+        android:layout_margin="8dp">
+
+        <!-- Іконка для інтересу 1 -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/icon_interest1"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Іконка для інтересу 2 -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/icon_interest2"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Іконка для інтересу 3 -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/icon_interest3" />
+
+    </LinearLayout>
+
+    <!-- Кількість друзів та список з 5 найкращих друзів -->
+    <LinearLayout
+        android:id="@+id/llFriends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/llInterests"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/tvFriendsCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Кількість друзів: 1000000" />
+
+        <!-- Список 5 найкращих друзів -->
+        <ListView
+            android:id="@+id/lvBestFriends"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+
 
 
 </RelativeLayout>
